@@ -1,0 +1,21 @@
+.header {
+    display: block;
+    width: 85%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 3em 0em;
+    img {
+        width: 20%;
+        max-width: 220px;
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 2em 0em;
+        img {
+            width: 50%;
+        }
+    }
+}

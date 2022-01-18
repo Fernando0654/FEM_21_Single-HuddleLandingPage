@@ -1,0 +1,63 @@
+@use "./util/colors" as color;
+
+footer {
+    display: block;
+    text-align: center;
+    width: 85%;
+    max-width: 1280px;
+    margin: auto;
+    padding-bottom: 3em;
+    .attribution {
+        display: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: clamp(0.8rem, 1.5vw, 1rem);
+        color: #fff;
+        a {
+            color: rgb(137, 142, 213);
+        }
+    }
+    .socials {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        position: absolute;
+        right: 5em;
+        bottom: 1.7em;
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            color: rgb(245, 237, 237);
+            font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+            font-weight: lighter;
+            border: 1px solid rgb(232, 224, 224);
+            border-radius: 150px;
+            padding: 0.5em;
+            &:hover {
+                color: color.$softMagenta;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        gap: 1em;
+        margin-bottom: 0;
+        margin-top: 3em;
+        .attribution {
+            display: block;
+        }
+        .socials {
+            position: inherit;
+            bottom: 0;
+        }
+    }
+}

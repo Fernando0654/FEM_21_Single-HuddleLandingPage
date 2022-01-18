@@ -1,0 +1,48 @@
+@use "./util/colors" as color;
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: color.$violet;
+}
+
+main {
+    width: 100%;
+}
+
+.pattern-bg {
+    position: fixed;
+    max-width: 1330px;
+    height: 100vh;
+    max-height: 1080px;
+    z-index: -1;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+button, .icon {
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .pattern-bg {
+        width: 100%;
+        min-height: inherit;
+        max-height: inherit;
+        top: -5em;
+        left: -5em;
+    }
+}

@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+/*
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+*/
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #674baf;
+}
+
+main {
+  width: 100%;
+}
+
+.pattern-bg {
+  position: fixed;
+  max-width: 1330px;
+  height: 100vh;
+  max-height: 1080px;
+  z-index: -1;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+button, .icon {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .pattern-bg {
+    width: 100%;
+    min-height: inherit;
+    max-height: inherit;
+    top: -5em;
+    left: -5em;
+  }
+}
+.header {
+  display: block;
+  width: 85%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 3em 0em;
+}
+.header img {
+  width: 20%;
+  max-width: 220px;
+  min-width: 100px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2em 0em;
+  }
+  .header img {
+    width: 50%;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 2.5em;
+  gap: 3.5em;
+}
+.content img {
+  display: block;
+  width: 55%;
+  max-width: 900px;
+}
+.content .content_info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 500px;
+  margin-top: 1.5em;
+}
+.content .content_info h1 {
+  display: block;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.2rem, 2.8vw, 2.8rem);
+  font-weight: 600;
+  margin-bottom: 0em;
+}
+.content .content_info p {
+  display: block;
+  color: #d3c2c2;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.content .content_info button {
+  display: block;
+  width: 50%;
+  max-width: 200px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #e882e8;
+  border-radius: 150px;
+  border: none;
+  background-color: #fff;
+  padding: 0.7em 0em;
+  margin-top: 0.5em;
+  box-shadow: 0px 10px 15px rgba(49, 45, 45, 0.453);
+  letter-spacing: -1px;
+}
+.content .content_info button:active {
+  transform: scale(0.9);
+}
+.content .content_info button:hover {
+  background-color: #e882e8;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
+  .content img {
+    width: 100%;
+  }
+  .content .content_info {
+    width: 100%;
+    margin-top: 0em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .content .content_info h1, .content .content_info p {
+    width: 90%;
+    margin: auto;
+  }
+  .content .content_info h1 {
+    font-size: 1.5rem;
+  }
+  .content .content_info p {
+    font-size: 0.9rem;
+  }
+  .content .content_info button {
+    width: 80%;
+    margin-top: 2em;
+  }
+}
+footer {
+  display: block;
+  text-align: center;
+  width: 85%;
+  max-width: 1280px;
+  margin: auto;
+  padding-bottom: 3em;
+}
+footer .attribution {
+  display: none;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  color: #fff;
+}
+footer .attribution a {
+  color: #898ed5;
+}
+footer .socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  position: absolute;
+  right: 5em;
+  bottom: 1.7em;
+}
+footer .socials .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  color: #f5eded;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+  font-weight: lighter;
+  border: 1px solid #e8e0e0;
+  border-radius: 150px;
+  padding: 0.5em;
+}
+footer .socials .icon:hover {
+  color: #e882e8;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    gap: 1em;
+    margin-bottom: 0;
+    margin-top: 3em;
+  }
+  footer .attribution {
+    display: block;
+  }
+  footer .socials {
+    position: inherit;
+    bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
